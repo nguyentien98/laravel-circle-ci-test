@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Repositories;
+
+use XuanQuynh\Laravel\Repositories\Repository as BaseRepository;
+use App\Contracts\Repositories\DummyRepositoryClass as DummyRepositoryClassInterface;
+// use App\DummyModelClass; // Put your model class here
+
+class DummyRepositoryClass extends BaseRepository implements DummyRepositoryClassInterface
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function getModelName()
+    {
+        // return DummyModelClass::class; // Put your model class here
+    }
+
+    // Define all abstract methods...
+}
