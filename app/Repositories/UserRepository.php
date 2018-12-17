@@ -15,6 +15,4 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
     {
         return User::class;
     }
-
-    // Define all abstract methods...
 }
