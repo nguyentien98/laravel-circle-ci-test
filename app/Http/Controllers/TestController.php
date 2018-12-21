@@ -12,8 +12,9 @@ class TestController extends Controller
         $this->user = $user;
     }
 
-    public function test()
+    public function test(Request $request)
     {
-        $this->user->find(1);
+        echo 'Hello';
+        dd($request->all());
     }
 }
